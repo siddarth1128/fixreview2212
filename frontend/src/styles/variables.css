@@ -1,0 +1,40 @@
+/* FixAll - CSS Variables */
+
+:root {
+    /* LIGHT MODE */
+    --bg-gradient: linear-gradient(135deg, #f0e4d4 0%, #d6c9a4 100%);
+    --text-primary: #0b1a34;
+    --text-secondary: #4e5d4e;
+    --accent-gradient: linear-gradient(90deg, #4e5d4e, #8b3a3a);
+    --highlight: #4e5d4e;
+    --card-bg: rgba(255,255,255,0.85);
+    --card-border: rgba(78,93,78,0.25);
+    --shadow: rgba(0,0,0,0.12);
+    --shadow-lg: rgba(0,0,0,0.25);
+    --progress-bg: rgba(78,93,78,0.15);
+    --decoration-1: linear-gradient(135deg, #4e5d4e, #8b3a3a);
+    --decoration-2: linear-gradient(135deg, #d6c9a4, #f0e4d4);
+    --decoration-3: linear-gradient(135deg, #0b1a34, #4e5d4e);
+    --decoration-4: linear-gradient(135deg, #8b3a3a, #d6c9a4);
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s ease;
+    --transition-slow: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+    /* DARK MODE */
+    --bg-gradient: linear-gradient(135deg, #0b1a34 0%, #1a2a44 100%);
+    --text-primary: #f0e4d4;
+    --text-secondary: #d6c9a4;
+    --accent-gradient: linear-gradient(90deg, #4e5d4e, #8b3a3a);
+    --highlight: #8b3a3a;
+    --card-bg: rgba(11,26,52,0.65);
+    --card-border: rgba(78,93,78,0.35);
+    --shadow: rgba(0,0,0,0.3);
+    --shadow-lg: rgba(0,0,0,0.5);
+    --progress-bg: rgba(240,228,212,0.15);
+    --decoration-1: linear-gradient(135deg, #4e5d4e, #8b3a3a);
+    --decoration-2: linear-gradient(135deg, #8b3a3a, #d6c9a4);
+    --decoration-3: linear-gradient(135deg, #0b1a34, #4e5d4e);
+    --decoration-4: linear-gradient(135deg, #d6c9a4, #f0e4d4);
+}
