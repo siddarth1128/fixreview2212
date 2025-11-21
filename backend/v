@@ -1,0 +1,649 @@
+SECTION 1 — LINUX (20 Viva Questions & Answers)
+1. What is Linux?
+
+✔ Linux is an open-source operating system based on UNIX.
+
+2. What is a kernel?
+
+✔ Core of the OS that manages hardware and processes.
+
+3. What is a shell?
+
+✔ Interface to interact with the OS (bash/sh).
+
+4. How do you see your current directory?
+
+✔ pwd
+
+5. How do you list all files including hidden files?
+
+✔ ls -a
+
+6. How do you check file permissions?
+
+✔ ls -l
+
+7. How do you change file permissions?
+
+✔ chmod 755 file
+
+8. How to create a directory?
+
+✔ mkdir folder
+
+9. How to delete a directory?
+
+✔ rm -r folder
+
+10. How do you view file content?
+
+✔ cat file, less file, tail file
+
+11. How do you check running processes?
+
+✔ ps, top
+
+12. How do you kill a process?
+
+✔ kill -9 PID
+
+13. How do you find files?
+
+✔ find / -name file.txt
+
+14. How do you check disk usage?
+
+✔ df -h
+
+15. How do you check memory usage?
+
+✔ free -m
+
+16. How do you switch user?
+
+✔ su - username
+
+17. How do you check network status?
+
+✔ ifconfig or ip a
+
+18. How do you download a file?
+
+✔ wget URL
+
+19. How do you check system uptime?
+
+✔ uptime
+
+20. How to view last 50 system logs?
+
+✔ tail -n 50 /var/log/syslog
+
+🌟 SECTION 2 — GIT & GITHUB (20 Viva Questions & Answers)
+1. What is Git?
+
+✔ Distributed version control system.
+
+2. What is GitHub?
+
+✔ Remote repository hosting service.
+
+3. How do you initialize a Git repo?
+
+✔ git init
+
+4. How do you clone a repo?
+
+✔ git clone <url>
+
+5. How do you stage files?
+
+✔ git add file or git add .
+
+6. How do you commit changes?
+
+✔ git commit -m "message"
+
+7. How do you check status?
+
+✔ git status
+
+8. How do you push changes?
+
+✔ git push origin main
+
+9. How do you create a branch?
+
+✔ git branch test
+
+10. How do you switch branch?
+
+✔ git checkout test
+
+11. How do you merge?
+
+✔ git merge test
+
+12. What is a pull request?
+
+✔ A request to merge changes into another branch.
+
+13. How do you update local repo?
+
+✔ git pull
+
+14. What is .gitignore?
+
+✔ File that contains patterns Git should ignore.
+
+15. How do you undo last commit?
+
+✔ git reset --soft HEAD~1
+
+16. How do you view commit history?
+
+✔ git log
+
+17. What is the difference between fork and clone?
+
+✔ Fork creates copy on GitHub; clone creates local copy.
+
+18. What is origin?
+
+✔ Default name of remote repository.
+
+19. What is HEAD?
+
+✔ Points to the current commit.
+
+20. What is Git stash?
+
+✔ Temporarily stores uncommitted work: git stash
+
+🌟 SECTION 3 — MAVEN (20 Viva Questions & Answers)
+1. What is Maven?
+
+✔ Build automation and dependency management tool for Java.
+
+2. What is POM?
+
+✔ Project Object Model (pom.xml).
+
+3. What is groupId?
+
+✔ Organization or project identifier.
+
+4. What is artifactId?
+
+✔ Name of the project output file.
+
+5. What is version?
+
+✔ Project build version.
+
+6. What is mvn clean?
+
+✔ Deletes target directory.
+
+7. What is mvn compile?
+
+✔ Compiles the source code.
+
+8. What is mvn test?
+
+✔ Runs test cases.
+
+9. What is mvn package?
+
+✔ Creates JAR or WAR output.
+
+10. What is dependency?
+
+✔ External library needed by the project.
+
+11. Where dependencies are stored?
+
+✔ In .m2 local repository.
+
+12. What is lifecycle?
+
+✔ Phases like clean → compile → test → package.
+
+13. What is plugin?
+
+✔ Used to perform tasks like compilation, packaging.
+
+14. What is repository?
+
+✔ Place where dependencies are stored.
+
+15. What is mvn install?
+
+✔ Installs built artifact to local .m2.
+
+16. What is mvn deploy?
+
+✔ Deploys to remote repository.
+
+17. What is snapshot version?
+
+✔ Under-development version.
+
+18. What is release version?
+
+✔ Stable production version.
+
+19. What is the default build directory?
+
+✔ target/
+
+20. What is Maven Wrapper?
+
+✔ Runs Maven without installing it globally.
+
+🌟 SECTION 4 — DOCKER (20 Viva Questions & Answers)
+1. What is Docker?
+
+✔ Containerization tool.
+
+2. What is a container?
+
+✔ Lightweight isolated runtime environment.
+
+3. What is a Docker image?
+
+✔ Template used to create containers.
+
+4. What is Dockerfile?
+
+✔ Script containing instructions to build Docker image.
+
+5. How to build image?
+
+✔ docker build -t app .
+
+6. How to run container?
+
+✔ docker run -d -p 8080:80 nginx
+
+7. How to view running containers?
+
+✔ docker ps
+
+8. How to stop container?
+
+✔ docker stop <id>
+
+9. How to remove image?
+
+✔ docker rmi <id>
+
+10. What is Docker Hub?
+
+✔ Public image registry.
+
+11. What is ENTRYPOINT?
+
+✔ Command that always runs in container.
+
+12. What is CMD?
+
+✔ Default command if no args provided.
+
+13. What is .dockerignore?
+
+✔ Files ignored while building image.
+
+14. What is a volume?
+
+✔ Persistent storage for containers.
+
+15. What is Docker compose?
+
+✔ Tool to run multi-container apps.
+
+16. How to check logs?
+
+✔ docker logs <container>
+
+17. What is port mapping?
+
+✔ -p hostPort:containerPort
+
+18. What is container ID?
+
+✔ Unique identifier for each container.
+
+19. How to exec into container?
+
+✔ docker exec -it <id> sh
+
+20. What is base image?
+
+✔ The starting image defined in Dockerfile.
+
+🌟 SECTION 5 — KUBERNETES (20 Viva Questions & Answers)
+1. What is Kubernetes?
+
+✔ Container orchestration platform.
+
+2. What is Minikube?
+
+✔ Local Kubernetes cluster.
+
+3. What is a Pod?
+
+✔ Smallest deployable unit.
+
+4. What is a Node?
+
+✔ Worker machine in Kubernetes.
+
+5. What is Deployment?
+
+✔ Manages replica pods.
+
+6. What is ReplicaSet?
+
+✔ Ensures fixed number of pod replicas.
+
+7. What is Service?
+
+✔ Exposes pod internally/externally.
+
+Types: ClusterIP, NodePort, LoadBalancer.
+
+8. What is Ingress?
+
+✔ HTTP routing to services.
+
+9. How to get pods?
+
+✔ kubectl get pods
+
+10. How to describe a pod?
+
+✔ kubectl describe pod <pod>
+
+11. How to check logs?
+
+✔ kubectl logs <pod>
+
+12. What is CrashLoopBackOff?
+
+✔ Container repeatedly crashing.
+
+13. Pod pending — reasons?
+
+✔ No resources, PVC unbound, taints.
+
+14. What is a Namespace?
+
+✔ Logical partition in cluster.
+
+15. What is a ConfigMap?
+
+✔ Stores non-sensitive configuration.
+
+16. What is a Secret?
+
+✔ Stores sensitive info (passwords).
+
+17. What is scaling?
+
+✔ kubectl scale --replicas=3 deployment/app
+
+18. What is rollout?
+
+✔ Rolling updates for deployments.
+
+19. How to rollback?
+
+✔ kubectl rollout undo deployment/app
+
+20. What is kubectl?
+
+✔ Command-line tool to interact with Kubernetes.
+
+🌟 SECTION 6 — JENKINS (20 Viva Questions & Answers)
+1. What is Jenkins?
+
+✔ CI/CD automation server.
+
+2. What is CI/CD?
+
+✔ Continuous Integration / Continuous Deployment.
+
+3. Default port of Jenkins?
+
+✔ 8080
+
+4. What is a Jenkins pipeline?
+
+✔ Code-based CI/CD workflow.
+
+5. What is Jenkinsfile?
+
+✔ Script that defines pipeline stages.
+
+6. What are pipeline stages?
+
+✔ Steps like Build, Test, Deploy.
+
+7. What is agent?
+
+✔ Machine that runs Jenkins jobs.
+
+8. What is Blue Ocean?
+
+✔ Modern UI for pipelines.
+
+9. What is a Freestyle project?
+
+✔ Basic job type for simple tasks.
+
+10. Where to configure tools?
+
+✔ Manage Jenkins → Global Tool Configuration.
+
+11. How to clone Git repo in pipeline?
+
+✔ git url: "https://github.com/repo.git"
+
+12. How to clean workspace?
+
+✔ cleanWs()
+
+13. How to run shell commands?
+
+✔ sh "mvn clean"
+
+14. How to store credentials securely?
+
+✔ Credentials Manager + withCredentials
+
+15. What is Jenkins master?
+
+✔ Controls jobs and agents.
+
+16. What is Jenkins agent?
+
+✔ Executes pipeline stages.
+
+17. How to trigger pipeline on GitHub push?
+
+✔ GitHub hook trigger.
+
+18. How to stop pipeline?
+
+✔ error("Stopping pipeline")
+
+19. How to print environment variables?
+
+✔ echo "${env.BUILD_NUMBER}"
+
+20. What is post section?
+
+✔ Defines actions after pipeline (success/failure).
+
+🌟 SECTION 7 — NAGIOS (20 Viva Questions & Answers)
+1. What is Nagios?
+
+✔ Infrastructure monitoring tool.
+
+2. What does Nagios monitor?
+
+✔ Servers, services, applications, network devices.
+
+3. Nagios service start?
+
+✔ systemctl start nagios
+
+4. How to check Nagios status?
+
+✔ systemctl status nagios
+
+5. How to validate config?
+
+✔ nagios -v /etc/nagios/nagios.cfg
+
+6. What is NRPE?
+
+✔ Nagios Remote Plugin Executor.
+
+7. Where are logs stored?
+
+✔ /var/log/nagios/nagios.log
+
+8. What is contact?
+
+✔ Person who receives alerts.
+
+9. What is hostgroup?
+
+✔ Group of hosts.
+
+10. What is service check?
+
+✔ Check on CPU, memory, disk, etc.
+
+11. What is check_ping?
+
+✔ Monitors host availability.
+
+12. What is check_http?
+
+✔ Monitors web server.
+
+13. What is check_load?
+
+✔ CPU load check.
+
+14. How to restart Nagios?
+
+✔ systemctl restart nagios
+
+15. Why host not showing in UI?
+
+✔ Config not validated or Nagios not restarted.
+
+16. What is CGI?
+
+✔ Interface used by web UI.
+
+17. Web error "Unable to connect to Nagios process"?
+
+✔ Nagios not running or permission issue.
+
+18. How to tail Nagios logs?
+
+✔ tail -f nagios.log
+
+19. What is service state?
+
+✔ OK, Warning, Critical, Unknown.
+
+20. What is downtime?
+
+✔ Scheduled maintenance period.
+
+🌟 SECTION 8 — AWS (20 Viva Questions & Answers)
+1. What is AWS?
+
+✔ Amazon cloud platform.
+
+2. What is EC2?
+
+✔ Virtual machine service.
+
+3. What is S3?
+
+✔ Object storage service.
+
+4. What is IAM?
+
+✔ Identity & Access Management.
+
+5. What is VPC?
+
+✔ Virtual Private Cloud.
+
+6. What is Elastic IP?
+
+✔ Static public IP.
+
+7. What is region?
+
+✔ Geographical location.
+
+8. What is availability zone?
+
+✔ Data center inside region.
+
+9. Free tier validity?
+
+✔ 12 months.
+
+10. What is instance type?
+
+✔ Hardware type of EC2 (t2.micro).
+
+11. What is security group?
+
+✔ Virtual firewall.
+
+12. What is key pair?
+
+✔ SSH login credential.
+
+13. What is AMI?
+
+✔ Machine image for EC2.
+
+14. What is auto-scaling?
+
+✔ Automatically adjusts number of EC2 instances.
+
+15. What is load balancer?
+
+✔ Distributes traffic across multiple servers.
+
+16. What is CloudWatch?
+
+✔ Monitoring service.
+
+17. What is Route53?
+
+✔ DNS service.
+
+18. What is S3 bucket?
+
+✔ Container to store objects.
+
+19. What is Lambda?
+
+✔ Serverless compute.
+
+20. What is RDS?
+
+✔ Managed database service.
